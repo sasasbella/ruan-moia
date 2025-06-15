@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Ruan Moia</title>
+<title>aceita namorar cmg?</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Material+Icons" rel="stylesheet" />
+<style>
+  /* Reset and base */
+  *, *::before, *::after {
+    box-sizing: border-box;
+  }
+  body {
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+    background: linear-gradient(135deg, #d1f4e7, #a2d9c9);
+    color: #22543d;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+
+  /* Glassmorphism header */
+  header {
+    position: sticky;
+    top: 0;
+    height: 64px;
+    background: rgba(255 255 255 / 0.15);
+    backdrop-filter: blur(15px);
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    font-size: clamp(1.5rem, 4vw, 2rem);
+    color: #2f855a;
+    letter-spacing: 0.1em;
+    z-index: 100;
+    user-select: none;
+  }
+
+  main {
+    flex: 1 1 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 32px 16px;
+  }
+
+  .button-container {
+    display: flex;
+    gap: 32px;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 360px;
+    width: 100%;
+  }
+
+  button, a.button {
+    min-width: 120px;
+    min-height: 48px;
+    border-radius: 12px;
+    border: none;
+    font-size: 1.25rem;
+    font-weight: 700;
+    cursor: pointer;
+    user-select: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    letter-spacing: 0.05em;
+    transition: 
+      background-color 0.3s ease,
+      color 0.3s ease,
+      transform 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+    box-shadow: 0 4px 12px rgba(34, 84, 61, 0.2);
+    background-color: #9ae6b4;
+    color: #22543d;
+  }
+
+  button:focus-visible, a.button:focus-visible {
+    outline: 3px solid #2f855a;
+    outline-offset: 2px;
+  }
+
+  a.button {
+      text-decoration: none;
+  }
+
+  /* Sim button */
+  a.button.sim {
+    background: linear-gradient(135deg, #68d391 0%, #38a169 100%);
+    color: #fafaf9;
+    box-shadow: 0 6px 18px rgba(56,161,105,0.4);
+  }
+  
+  a.button.sim:hover,
+  a.button.sim:focus-visible {
+    background: linear-gradient(135deg, #38a169, #276749);
+    color: #e6fffa;
+    transform: scale(1.05);
+  }
+
+  /* Não button */
+  button.nao {
+    background: linear-gradient(135deg, #c6f6d5 0%, #9ae6b4 100%);
+    color: #22543d;
+    box-shadow: 0 4px 14px rgba(98, 174, 125, 0.3);
+  }
+  button.nao:hover {
+    background: linear-gradient(135deg, #9ae6b4, #68d391);
+    color: #1a202c;
+    transform: scale(1.05);
+  }
+  button.nao:focus {
+    outline: 3px solid #22543d;
+    outline-offset: 2px;
+  }
+  
+  /* Footer */
+  footer {
+    flex-shrink: 0;
+    background: rgba(255 255 255 / 0.25);
+    backdrop-filter: blur(15px);
+    color: #22543d;
+    text-align: center;
+    padding: 1rem;
+    font-size: 0.875rem;
+  }
+
+  /* Responsive */
+  @media (max-width: 480px) {
+    .button-container {
+      max-width: 100%;
+      gap: 24px;
+    }
+    a.button, button {
+      min-width: 100px;
+      font-size: 1rem;
+      min-height: 44px;
+    }
+  }
+</style>
+</head>
+<body>
+<header>RUAN MOIA</header>
+<main>
+  <nav class="button-container" aria-label="Opções de navegação">
+    <a href="ruan-moia-hearts.html" class="button sim" role="button" aria-label="Sim, levar para site com corações">Sim</a>
+    <button class="nao" type="button" aria-label="Não, não leva a lugar nenhum" aria-disabled="false">Não</button>
+  </nav>
+</main>
+<footer>© 2024 Ruan Moia - Site romântico elegante</footer>
+</body>
+</html>
+
